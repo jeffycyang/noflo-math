@@ -28,11 +28,11 @@ describe 'Absolute Value component', ->
 
   describe 'when instantiated', ->
     it 'should not hold values', ->
-      chai.expect(c.primary).to.be.an 'object'
-      chai.expect(c.primary.value).to.be.a 'null'
-      chai.expect(c.secondary).to.be.a 'null'
+      chai.expect(c.input).to.be.an 'object'
+      chai.expect(c.input.value).to.be.a 'null'
+      # chai.expect(c.secondary).to.be.a 'null'
     it 'should calculate the absolute value of -5 = 5', (done) ->
       modulus.once 'data', (res) ->
         chai.expect(res).to.equal 5
         done()
-      base.send -5
+      value.send -5

@@ -1,8 +1,8 @@
-{MathComponent} = require '../lib/MathComponent'
+{UnaryMathComponent} = require '../lib/UnaryMathComponent'
 
-class AbsoluteValue extends MathComponent
+class AbsoluteValue extends UnaryMathComponent
   constructor: ->
-    super 'value'
+    super 'value', 'modulus'
 
   calculate: (value) ->
     Math.abs(value)
