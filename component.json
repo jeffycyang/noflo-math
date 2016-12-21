@@ -27,7 +27,8 @@
     "components/SendNumber.coffee",
     "lib/MathComponent.coffee",
     "index.js",
-    "components/Exponentiate.coffee"
+    "components/Exponentiate.coffee",
+    "components/AbsoluteValue.coffee"
   ],
   "json": [
     "component.json"
@@ -35,6 +36,7 @@
   "noflo": {
     "icon": "plus-circle",
     "components": {
+      "AbsoluteValue": "components/AbsoluteValue.coffee",
       "Accumulate": "components/Accumulate.coffee",
       "Add": "components/Add.coffee",
       "CalculateAngle": "components/CalculateAngle.coffee",
